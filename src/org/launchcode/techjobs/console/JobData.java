@@ -81,6 +81,9 @@ public class JobData {
                 jobs.add(row);
             }
         }
+        if (jobs.size() < 1) {
+            System.out.println("Search complete. No results for '" + value + "' found.");
+        }
 
         return jobs;
     }
@@ -99,6 +102,10 @@ public class JobData {
                     break;
                 }
         }
+        if (jobs.size() < 1) {
+            System.out.println("Search complete. No results for '" + value + "' found.");
+        }
+
         return jobs;
     }
 
